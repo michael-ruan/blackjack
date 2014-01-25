@@ -1,4 +1,4 @@
--blackjack
+blackjack
 ==========
 
 vingt-et-un
