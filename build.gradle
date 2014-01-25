@@ -1,0 +1,39 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'maven'
+apply plugin: 'war'
+apply plugin: 'jetty'
+
+group = 'com.thoughtworks'
+version = '0.0.1'
+
+webAppDirName = 'webapp'
+
+repositories {
+    mavenCentral()
+}
+
+configurations { 
+	providedCompile 
+}
+
+dependencies {
+    providedCompile 'javax.servlet:servlet-api:2.5'
+    compile 'org.springframework:spring-webmvc:3.2.0.RELEASE'
+    compile 'org.springframework:spring-test:3.2.0.RELEASE'
+    compile group: 'com.google.guava', name: 'guava', version: '15.0'
+    compile group: 'javax.servlet.jsp', name: 'jsp-api', version: '2.1' 
+    runtime 'javax.servlet:jstl:1.2'
+    testCompile 'junit:junit:4.11'
+    testCompile 'org.mockito:mockito-all:1.9.5'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.8'
+}
+
+task "create-dirs"<< {
+    sourceSets*.java.srcDirs*.each { it.mkdirs() }
+    sourceSets*.resources.srcDirs*.each { it.mkdirs() }
+}
+
