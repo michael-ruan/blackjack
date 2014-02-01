@@ -54,7 +54,7 @@ public class Card {
         String rankString = new String();
         String suitString = new String();
         switch (rank) {
-            case ACE:   rankString = "A";
+            case ACE:   rankString = "1";
                 break;
             case KING:  rankString = "K";
                 break;

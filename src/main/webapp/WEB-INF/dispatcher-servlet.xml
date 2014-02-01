@@ -17,21 +17,4 @@
     <mvc:resources mapping="/resources/**" location="/WEB-INF/resources/" />
     <mvc:annotation-driven/>
 
-    <bean id="gameController" class="com.thoughtworks.controller.GameController">
-        <property name="blackJackGame" ref="blackJackGame"></property>
-    </bean>
-
-    <bean id="blackJackGame" class="com.thoughtworks.controller.BlackJackGame">
-        <constructor-arg index="0"><ref bean="host"/></constructor-arg>
-        <constructor-arg index="1"><ref bean="player"/></constructor-arg>
-    </bean>
-
-    <bean id="host" class="com.thoughtworks.model.Hand">
-        <constructor-arg><value>Host</value></constructor-arg>
-    </bean>
-
-    <bean id="player" class="com.thoughtworks.model.Hand">
-        <constructor-arg><value>Player</value></constructor-arg>
-    </bean>
-
 </beans>

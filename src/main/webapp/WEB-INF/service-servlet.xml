@@ -13,10 +13,10 @@
     </bean>
 
     <bean id="host" class="com.thoughtworks.model.Hand">
-        <constructor-arg><value>"Host"</value></constructor-arg>
+        <constructor-arg><value>Host</value></constructor-arg>
     </bean>
 
     <bean id="player" class="com.thoughtworks.model.Hand">
-        <constructor-arg><value>"Player"</value></constructor-arg>
+        <constructor-arg><value>Player</value></constructor-arg>
     </bean>
 </beans>
