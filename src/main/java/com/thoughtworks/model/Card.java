@@ -41,4 +41,56 @@ public class Card {
     public int getValue() {
         return value;
     }
+
+    @Override
+    public String toString() {
+        return "Card{" +
+                "suit=" + suit +
+                ", rank=" + rank +
+                '}';
+    }
+
+    public String getImagePath() {
+        String rankString = new String();
+        String suitString = new String();
+        switch (rank) {
+            case ACE:   rankString = "A";
+                break;
+            case KING:  rankString = "K";
+                break;
+            case QUEEN: rankString = "Q";
+                break;
+            case JACK:  rankString = "J";
+                break;
+            case TEN:   rankString = "10";
+                break;
+            case NINE:  rankString = "9";
+                break;
+            case EIGHT: rankString = "8";
+                break;
+            case SEVEN: rankString = "7";
+                break;
+            case SIX:   rankString = "6";
+                break;
+            case FIVE:  rankString = "5";
+                break;
+            case FOUR:  rankString = "4";
+                break;
+            case THREE: rankString = "3";
+                break;
+            case TWO:   rankString = "2";
+                break;
+        }
+        switch (suit) {
+            case CLUB:   suitString = "C";
+                break;
+            case HEART:  suitString = "H";
+                break;
+            case DIAMOND: suitString = "D";
+                break;
+            case SPADE:  suitString = "S";
+                break;
+        }
+        return "../resources/img/" + rankString + suitString + ".gif";
+    }
 }

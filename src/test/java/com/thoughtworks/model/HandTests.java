@@ -32,4 +32,39 @@ public class HandTests {
         verify(mockedDeck, times(2)).deal();
         assertThat(hand.getPoints(), is(18));
     }
+
+    @Test
+    public void should_break() throws Exception {
+        Card firstCard = new Card(Suit.DIAMOND, Rank.EIGHT);
+        Card secondCard = new Card(Suit.CLUB, Rank.JACK);
+        Card thirdCard = new Card(Suit.HEART, Rank.FIVE);
+
+        when(mockedDeck.deal()).thenReturn(firstCard).thenReturn(secondCard)
+            .thenReturn(thirdCard);
+
+        hand.draw(mockedDeck.deal());
+        hand.draw(mockedDeck.deal());
+        hand.draw(mockedDeck.deal());
+
+        verify(mockedDeck, times(3)).deal();
+        assertThat(hand.isBreak(), is(true));
+
+    }
+
+    @Test
+    public void should_not_break() throws Exception {
+        Card firstCard = new Card(Suit.DIAMOND, Rank.EIGHT);
+        Card secondCard = new Card(Suit.CLUB, Rank.JACK);
+        Card thirdCard = new Card(Suit.HEART, Rank.THREE);
+
+        when(mockedDeck.deal()).thenReturn(firstCard).thenReturn(secondCard)
+                .thenReturn(thirdCard);
+
+        hand.draw(mockedDeck.deal());
+        hand.draw(mockedDeck.deal());
+        hand.draw(mockedDeck.deal());
+
+        verify(mockedDeck, times(3)).deal();
+        assertThat(hand.isBreak(), is(false));
+    }
 }
