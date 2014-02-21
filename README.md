@@ -3,7 +3,7 @@ blackjack
 
 (vingt-et-un)
 
-`blackjack` is a Blackjack game through a web browser that using `Spring Framework`. It allows two players to start the game.
+`blackjack` is a Blackjack game through a web browser that using `Spring Framework`. It allows two players to play the game.
 
 ## Introduce of Blackjack
 Blackjack, also known as twenty-one, is the most widely played casino banking game in the world. Blackjack is a comparing card game between a player and dealer, meaning that players compete against the dealer but not against any other players. It is played with one or more decks of 52 cards.
