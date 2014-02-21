@@ -21,14 +21,14 @@ The object of the game is to "beat the dealer", which can be done in a number of
 
 ## Screenshots
 In player's turn
-![Player](https://github.com/chonghe-ruan/ruan.github.io/blob/master/images/blackjack-player.png)
+![Player](https://raw2.github.com/chonghe-ruan/ruan.github.io/master/images/blackjack-player.png)
 After standing by player, it's host's turn
-![Host](https://github.com/chonghe-ruan/ruan.github.io/blob/master/images/blackjack-host.png)
+![Host](https://raw2.github.com/chonghe-ruan/ruan.github.io/master/images/blackjack-host.png)
 Show the result
-![Result](https://github.com/chonghe-ruan/ruan.github.io/blob/master/images/blackjack-result.png)
+![Result](https://raw2.github.com/chonghe-ruan/ruan.github.io/master/images/blackjack-result.png)
 
 ## Contributor
-Chonghe Ruan(http://www.linkedin.com/profile/view?id=218589527&trk=nav_responsive_tab_profile_pic)
+[Chonghe Ruan](http://www.linkedin.com/profile/view?id=218589527&trk=nav_responsive_tab_profile_pic)
 
 ## Copyright & License
 
