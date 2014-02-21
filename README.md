@@ -1,7 +1,7 @@
 blackjack
 ==========
 
-(vingt-et-u)
+(vingt-et-un)
 
 `blackjack` is a Blackjack game through a web browser that using `Spring Framework`. It allows two players to start the game.
 
